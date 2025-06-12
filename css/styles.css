@@ -38,3 +38,249 @@ ul{
 
 /* ---HERO--- */
 
+.hero-section{
+	background-color: #1E1823;
+}
+.hero-title{
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 121%;
+	letter-spacing: -0.03em;
+	text-align: left;
+}
+.hero-button-buy{
+	color: #FFFFFF;
+	font-weight: 600;
+	font-size: 14px;
+	background-color: #FD9222;
+	border-radius: 100px;
+	border-color: #FD9222;
+	cursor: pointer;
+}
+.hero-button-buy:hover,
+.hero-button-buy:focus,
+.hero-button-buy:active{
+	color: #FD9222;
+	background-color: #fcf1e0;
+	border-color: #fcf1e0;
+}
+.hero-button-receipe{
+	font-weight: 600;
+	font-size: 14px;
+	color: #FFFFFF;
+	border-radius: 100px;
+	border: 1px solid #FFFFFF;
+}
+.hero-button-receipe:hover,
+.hero-button-receipe:focus,
+.hero-button-receipe:active{
+	color: #FD9222;
+	font-weight: 600;
+	font-size: 14px;
+	border: 1px solid #FD9222;
+}
+.hero-scroll{
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 129%;
+	letter-spacing: -0.03em
+}
+.hero-scroll:hover,
+.hero-scroll:focus,
+.hero-scroll:active{
+	color: #FD9222;
+}
+
+/* ---ADVANTAGES--- */
+
+.advantages{
+	background-color: #1E1823;
+}
+.advantages-title{
+	color: #FFFFFF;
+}
+.advantages-list-item-title{
+	color: #FFFFFF;
+	font-weight: 600;
+	font-size: 18px;
+}
+.advantages-list-item-text{
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: -0.02em;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---INGREDIENTS--- */
+.ingredients-title{
+	color: #111111;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 117%;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	text-align: center;
+}
+.ingredients-title span{
+	color: #FD9222;
+}
+.ingredients-text{
+	color: #111111;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 129%;
+	letter-spacing: -0.02em;
+	text-align: center;
+}
+.ingredients-list-item{
+	background-color: #FFFFFF;
+	border: 1px solid #FD9222;
+	border-radius: 15px;
+	width: 270px;
+	height: 270px;
+}
+.ingredients-list-item-title{
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 129%;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+}
+.ingredients-list-item:first-child{
+	background-color: #FD9222;
+	color: #FFFFFF;
+}
+.ingredients-list-item:last-child{
+	background-color: #1E1823;
+	border: 1px solid #1E1823;
+	color: #FFFFFF;
+}
+
+/* ---INSTRUCTION--- */
+
+.instruction-title{
+	color: #111111;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 117%;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	text-align: center;
+}
+.instruction-title-span {
+	color: #FD9222;
+}
+.instruction-description{
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 133%;
+	color: #111111
+}
+.instruction-list-item{
+	list-style: disc;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 129%;
+	letter-spacing: -0.02em;
+	color: #111111;
+}
+
+/* ---FEEDBACK--- */
+
+.feedback-title{
+	color: #111111;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 117%;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	text-align: center;
+}
+.feedback-title-span{
+	color: #FD9222;
+}
+.feedback-list-item{
+	border: 1px solid rgba(17, 17, 17, 0.1);
+	border-radius: 15px;
+	box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+	background: var(--white);
+}
+.feedback-list-item img{
+	border-radius: 100%;
+}
+.feedback-list-title{
+	color: #111111;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 133%;
+	text-align: center;
+	color: var(--black);
+}
+.feedback-list-text{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 129%;
+	letter-spacing: -0.02em;
+	text-align: center;
+	color: rgba(17, 17, 17, 0.7);
+}
+.feedback-button{
+	color: #111111;
+	font-weight: 600;
+	font-size: 18px;
+	border: 1px solid #FD9222;
+	border-radius: 100px;
+	cursor: pointer;
+}
+.feedback-button:hover,
+.feedback-button:focus,
+.feedback-button:active{
+color: #FFFFFF;
+background-color: #FD9222;
+}
+
+/* ---FOOTER--- */
+
+.page-footer{
+	background-color: #1E1823;
+}
+.page-footer-text{
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 121%;
+	letter-spacing: -0.02em;
+}
+.page-footer-text-span{
+	color: #FD9222;
+}
+.page-footer .nav-list-item-link{
+	color: #FFFFFF;
+}
+.page-footer .nav-list-item-link:hover,
+.page-footer .nav-list-item-link:focus,
+.page-footer .nav-list-item-link:active {
+	color: #FD9222;
+}
+.page-adress-title{
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 129%;
+}
+.address-list-item-link{
+	color: #FFFFFF;
+ 	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 129%;
+	letter-spacing: -0.02em;
+	text-align: center;
+}
+.address-list-item-link:hover,
+.address-list-item-link:focus,
+.address-list-item-link:active{
+	color: #FD9222;
+}
