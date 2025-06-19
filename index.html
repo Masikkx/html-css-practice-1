@@ -51,23 +51,25 @@
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <ul class="hero-button-list">
-          <li class="hero-button-list-item">
-            <button type="button" class="hero-button-buy">Buy now</button>
-          </li>
-          <li class="hero-button-list-item">
-            <a href="#how-it’s-made" class="hero-button-receipe"
-              >How it’s made</a
-            >
-          </li>
-        </ul>
-        <a href="#for-scroll" class="hero-scroll">scroll down</a>
+        <div class="hero-buttons">
+          <ul class="hero-button-list">
+            <li class="hero-button-list-item">
+              <button type="button" class="hero-button-buy">Buy now</button>
+            </li>
+            <li class="hero-button-list-item">
+              <a href="#how-it’s-made" class="hero-button-receipe"
+                >How it’s made</a
+              >
+            </li>
+          </ul>
+          <a href="#for-scroll" class="hero-scroll">scroll down</a>
+        </div>
       </div>
     </section>
 
     <section class="advantages">
       <div class="container">
-        <h2 class="advantages-title">Why Choose Us?</h2>
+        <h2 class="advantages-title visually-hidden">Why Choose Us?</h2>
         <ul class="advantages-list">
           <li class="advantages-list-item">
             <h3 class="advantages-list-item-title">Unsurpassed taste</h3>
@@ -119,11 +121,18 @@
               alt="milk chocolate"
               width="206"
               height="160"
+              class="ingredients-list-item-img"
             />
             <h3 class="ingredients-list-item-title">milk chocolate</h3>
           </li>
           <li class="ingredients-list-item">
-            <img src="./images/milk.webp" alt="milk" width="206" height="160" />
+            <img
+              src="./images/milk.webp"
+              alt="milk"
+              width="206"
+              height="160"
+              class="ingredients-list-item-img"
+            />
             <h3 class="ingredients-list-item-title">milk</h3>
           </li>
           <li class="ingredients-list-item">
@@ -132,11 +141,18 @@
               alt="semi - sweet choocolate"
               width="206"
               height="160"
+              class="ingredients-list-item-img"
             />
             <h3 class="ingredients-list-item-title">semi - sweet chocolate</h3>
           </li>
           <li class="ingredients-list-item">
-            <img src="./images/nuts.webp" alt="nuts" width="206" height="160" />
+            <img
+              src="./images/nuts.webp"
+              alt="nuts"
+              width="206"
+              height="160"
+              class="ingredients-list-item-img"
+            />
             <h3 class="ingredients-list-item-title">nuts</h3>
           </li>
         </ul>
@@ -148,30 +164,41 @@
         <h2 class="instruction-title">
           how it’s <span class="instruction-title-span">made?</span>
         </h2>
-        <img src="./images/recipe.jpg" alt="recipe" width="600" height="400" />
-        <h3 class="instruction-description">
-          Try our chocolates today and discover the perfect balance of flavor
-        </h3>
-        <ul class="instruction-list">
-          <li class="instruction-list-item">
-            Heat the milk in a saucepan without bringing it to a boil. Add sugar
-            and cocoa powder.
-          </li>
-          <li class="instruction-list-item">
-            At the same time, prepare a water bath. Melt the butter on it.
-          </li>
-          <li class="instruction-list-item">
-            "Mix" the milk mixture and already liquid butter. Mix thoroughly
-            with a silicone spatula so that the mass becomes uniform and silky.
-          </li>
-          <li class="instruction-list-item">
-            Heat the mixture over low heat, letting it barely boil.
-          </li>
-          <li class="instruction-list-item">
-            Pour the chocolate into special containers (can be replaced with ice
-            molds). Allow to cool and harden.
-          </li>
-        </ul>
+        <div class="instruction-wrapper">
+          <img
+            src="./images/recipe.jpg"
+            alt="recipe"
+            width="600"
+            height="400"
+          />
+          <div class="instruction-content">
+            <h3 class="instruction-description">
+              Try our chocolates today and discover the perfect balance of
+              flavor
+            </h3>
+            <ul class="instruction-list">
+              <li class="instruction-list-item">
+                Heat the milk in a saucepan without bringing it to a boil. Add
+                sugar and cocoa powder.
+              </li>
+              <li class="instruction-list-item">
+                At the same time, prepare a water bath. Melt the butter on it.
+              </li>
+              <li class="instruction-list-item">
+                "Mix" the milk mixture and already liquid butter. Mix thoroughly
+                with a silicone spatula so that the mass becomes uniform and
+                silky.
+              </li>
+              <li class="instruction-list-item">
+                Heat the mixture over low heat, letting it barely boil.
+              </li>
+              <li class="instruction-list-item">
+                Pour the chocolate into special containers (can be replaced with
+                ice molds). Allow to cool and harden.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -229,29 +256,33 @@
 
     <footer id="for-scroll" class="page-footer">
       <div class="container">
-        <p class="page-footer-text">
-          <span class="page-footer-text-span">Chocolate</span> a delicious cure
-          for a bad day
-        </p>
-        <p class="page-adress-title">Contact us</p>
-        <address class="page-adress">
-          <ul class="page-adress-list">
-            <li class="page-adress-list-item">
-              <a href="tel:+380684439426" class="address-list-item-link"
-                >+380 (68) 443-94-26</a
-              >
-            </li>
-            <li class="page-adress-list-item">
-              <a
-                href="mailto:simplycthаoc@gmail.com"
-                class="address-list-item-link"
-                >simplycthаoc@gmail.com</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="page-footer-wrapper">
+          <p class="page-footer-text">
+            <span class="page-footer-text-span">Chocolate</span> a delicious
+            cure for a bad day
+          </p>
+          <div class="footer-adress-wrapper">
+            <p class="page-adress-title">Contact us</p>
+            <address class="page-adress">
+              <ul class="page-adress-list">
+                <li class="page-adress-list-item">
+                  <a href="tel:+380684439426" class="address-list-item-link"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li class="page-adress-list-item">
+                  <a
+                    href="mailto:simplycthаoc@gmail.com"
+                    class="address-list-item-link"
+                    >simplycthаoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
         <nav class="page-nav">
-          <ul>
+          <ul class="page-nav-list">
             <li class="page-nav-list-item">
               <a href="#Home" class="nav-list-item-link">Home</a>
             </li>
