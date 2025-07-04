@@ -23,9 +23,14 @@
     <header class="page-header">
       <div class="container">
         <nav class="page-nav">
-          <a href="./index.html" class="logo"
-            >simply <span class="logo-span">chocolate</span></a
-          >
+          <a href="./index.html" class="logo">
+            <div class="logo-text">
+              simply <span class="logo-span">chocolate</span>
+            </div>
+            <svg class="logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-chocolate"></use>
+            </svg>
+          </a>
           <ul class="page-nav-list">
             <li class="page-nav-list-item">
               <a href="#Hero" class="nav-list-item-link">Home</a>
@@ -42,6 +47,22 @@
             </li>
           </ul>
         </nav>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -62,42 +83,70 @@
               >
             </li>
           </ul>
-          <a href="#for-scroll" class="hero-scroll">scroll down</a>
+          <a href="#for-scroll" class="hero-scroll"
+            ><p class="hero-scroll-text">scroll down</p>
+            <div class="scroll-icon-wrapper">
+              <svg class="scroll-icon" width="22" height="22">
+                <use href="./images/icons.svg#icon-scroll"></use>
+              </svg>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="benefits">
       <div class="container">
         <h2 class="advantages-title visually-hidden">Why Choose Us?</h2>
         <ul class="advantages-list">
           <li class="advantages-list-item">
-            <h3 class="advantages-list-item-title">Unsurpassed taste</h3>
-            <p class="advantages-list-item-text">
-              Crafted with the finest quality cocoa beans and a dedication to
-              perfection, each bite is a decadent experience that simply cannot
-              be matched. Savor the richness and complexity of our Unsurpassed
-              Taste and discover a new level of chocolate bliss.
-            </p>
+            <div class="advantage-item-wrapper">
+              <div class="advantages-icon-wrapper">
+                <svg class="advantages-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-chocolate-bar"></use>
+                </svg>
+              </div>
+              <h3 class="advantages-list-item-title">Unsurpassed taste</h3>
+              <p class="advantages-list-item-text">
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+            </div>
           </li>
           <li class="advantages-list-item">
-            <h3 class="advantages-list-item-title">Affordable price</h3>
-            <p class="advantages-list-item-text">
-              Indulge in high-quality chocolate without breaking the bank with
-              Simply Chocolate's selection of affordable treats. Enjoy
-              mouth-watering truffles and velvety chocolate bars without
-              sacrificing taste or quality. Browse our selection and indulge in
-              affordable luxury today.
-            </p>
+            <div class="advantage-item-wrapper">
+              <div class="advantages-icon-wrapper">
+                <svg class="advantages-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
+              <h3 class="advantages-list-item-title">Affordable price</h3>
+              <p class="advantages-list-item-text">
+                Indulge in high-quality chocolate without breaking the bank with
+                Simply Chocolate's selection of affordable treats. Enjoy
+                mouth-watering truffles and velvety chocolate bars without
+                sacrificing taste or quality. Browse our selection and indulge
+                in affordable luxury today.
+              </p>
+            </div>
           </li>
           <li class="advantages-list-item">
-            <h3 class="advantages-list-item-title">Own production</h3>
-            <p class="advantages-list-item-text">
-              We take pride in our own production process, ensuring that every
-              step is carefully crafted to perfection. From selecting the finest
-              ingredients to handcrafting each piece, our attention to detail is
-              evident in every bite.
-            </p>
+            <div class="advantage-item-wrapper">
+              <div class="advantages-icon-wrapper">
+                <svg class="advantages-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
+              <h3 class="advantages-list-item-title">Own production</h3>
+              <p class="advantages-list-item-text">
+                We take pride in our own production process, ensuring that every
+                step is carefully crafted to perfection. From selecting the
+                finest ingredients to handcrafting each piece, our attention to
+                detail is evident in every bite.
+              </p>
+            </div>
           </li>
         </ul>
       </div>
@@ -105,7 +154,7 @@
 
     <section class="ingredients">
       <div class="container">
-        <h2 class="ingredients-title">
+        <h2 class="ingredients-section-title">
           it all adds up to one exceptional <span>taste</span> sensation
         </h2>
         <p class="ingredients-text">
@@ -116,44 +165,137 @@
         </p>
         <ul class="ingredients-list">
           <li class="ingredients-list-item">
-            <img
-              src="./images/milk-chocolate.webp"
-              alt="milk chocolate"
-              width="206"
-              height="160"
-              class="ingredients-list-item-img"
-            />
-            <h3 class="ingredients-list-item-title">milk chocolate</h3>
+            <div class="box">
+              <div class="box-wrapper">
+                <img
+                  src="./images/milk-chocolate.webp"
+                  alt="milk chocolate"
+                  width="206"
+                  height="160"
+                  class="ingredients-list-item-img"
+                />
+                <h3 class="ingredients-list-item-title">milk chocolate</h3>
+              </div>
+              <div class="overlay">
+                <h3 class="ingredients-title">Milk chocolate</h3>
+                <ul class="box-link-list">
+                  <li class="box-link-list-item">
+                    <a href="" class="box-list-link">chocolate</a>
+                  </li>
+                  <li class="box-link-list-item">
+                    <a href="#benefits" class="box-list-link">the benefits</a>
+                  </li>
+                </ul>
+                <p class="box-info">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
+            </div>
           </li>
           <li class="ingredients-list-item">
-            <img
-              src="./images/milk.webp"
-              alt="milk"
-              width="206"
-              height="160"
-              class="ingredients-list-item-img"
-            />
-            <h3 class="ingredients-list-item-title">milk</h3>
+            <div class="box">
+              <div class="box-wrapper">
+                <img
+                  src="./images/milk.webp"
+                  alt="milk"
+                  width="206"
+                  height="160"
+                  class="ingredients-list-item-img"
+                />
+                <h3 class="ingredients-list-item-title">milk</h3>
+              </div>
+              <div class="overlay">
+                <h3 class="ingredients-title">Milk</h3>
+                <ul class="box-link-list">
+                  <li class="box-link-list-item">
+                    <a href="" class="box-list-link">milk</a>
+                  </li>
+                  <li class="box-link-list-item">
+                    <a href="#benefits" class="box-list-link">the benefits</a>
+                  </li>
+                </ul>
+                <p class="box-info">
+                  Milk is a white liquid food produced by the mammary glands of
+                  mammals. It is the primary source of nutrition for young
+                  mammals (including breastfed human infants) before they are
+                  able to digest solid food.Early-lactation milk, which is
+                  called colostrum, contains antibodies that strengthen the
+                  immune system.
+                </p>
+              </div>
+            </div>
           </li>
           <li class="ingredients-list-item">
-            <img
-              src="./images/semi-sweet-chocolate.webp"
-              alt="semi - sweet choocolate"
-              width="206"
-              height="160"
-              class="ingredients-list-item-img"
-            />
-            <h3 class="ingredients-list-item-title">semi - sweet chocolate</h3>
+            <div class="box">
+              <div class="box-wrapper">
+                <img
+                  src="./images/semi-sweet-chocolate.webp"
+                  alt="semi - sweet choocolate"
+                  width="206"
+                  height="160"
+                  class="ingredients-list-item-img"
+                />
+                <h3 class="ingredients-list-item-title">
+                  semi - sweet chocolate
+                </h3>
+              </div>
+              <div class="overlay">
+                <h3 class="ingredients-title">Nuts</h3>
+                <ul class="box-link-list">
+                  <li class="box-link-list-item">
+                    <a href="" class="box-list-link">nuts</a>
+                  </li>
+                  <li class="box-link-list-item">
+                    <a href="#benefits" class="box-list-link">the benefits</a>
+                  </li>
+                </ul>
+                <p class="box-info">
+                  Almonds, pistachios, and walnuts are some types of nuts that
+                  contain healthy nutrients. When eaten as part of a
+                  nutrient-dense diet, these 9 nuts may offer benefits such as
+                  reducing your risk of heart disease. They’re a good source of
+                  fiber, healthy fats, and plant protein. Plus, they’re great on
+                  their own.
+                </p>
+              </div>
+            </div>
           </li>
           <li class="ingredients-list-item">
-            <img
-              src="./images/nuts.webp"
-              alt="nuts"
-              width="206"
-              height="160"
-              class="ingredients-list-item-img"
-            />
-            <h3 class="ingredients-list-item-title">nuts</h3>
+            <div class="box">
+              <div class="box-wrapper">
+                <img
+                  src="./images/nuts.webp"
+                  alt="nuts"
+                  width="206"
+                  height="160"
+                  class="ingredients-list-item-img"
+                />
+                <h3 class="ingredients-list-item-title">nuts</h3>
+              </div>
+              <div class="overlay">
+                <h3 class="ingredients-title">semi - sweet chocolate</h3>
+                <ul class="box-link-list">
+                  <li class="box-link-list-item">
+                    <a href="" class="box-list-link">sweet chocolate</a>
+                  </li>
+                  <li class="box-link-list-item">
+                    <a href="#benefits" class="box-list-link">the benefits</a>
+                  </li>
+                </ul>
+                <p class="box-info">
+                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                  One of the best ways to gain an understanding of this type of
+                  chocolate is to compare it to a different type of chocolate.
+                  Semisweet is darker than milk chocolate. In a taste
+                  comparison, it has a slightly bitter taste whereas milk
+                  chocolate is sweeter and more mellow.
+                </p>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -281,24 +423,117 @@
             </address>
           </div>
         </div>
-        <nav class="page-nav">
-          <ul class="page-nav-list">
-            <li class="page-nav-list-item">
-              <a href="#Home" class="nav-list-item-link">Home</a>
-            </li>
-            <li class="page-nav-list-item">
-              <a href="#how-it’s-made" class="nav-list-item-link"
-                >How it’s made?</a
-              >
-            </li>
-            <li class="page-nav-list-item">
-              <a href="#chocolate-is-loved" class="nav-list-item-link"
-                >Chocolate is loved</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="footer-bottom-wrapper">
+          <nav class="page-nav">
+            <ul class="page-nav-list">
+              <li class="page-nav-list-item">
+                <a href="#Home" class="nav-list-item-link">Home</a>
+              </li>
+              <li class="page-nav-list-item">
+                <a href="#how-it’s-made" class="nav-list-item-link"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="page-nav-list-item">
+                <a href="#chocolate-is-loved" class="nav-list-item-link"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <form class="subscribe-form">
+            <label for="user-email" class="subscribe-form-label"></label>
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Enter your email"
+              class="subscribe-form-input"
+            />
+            <button type="submit" class="subscribe-form-button">
+              Subscribe
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="layout">
+      <div class="pop-up-form">
+        <button type="button" class="form-close-btn">
+          <svg class="close-btn-icon" width="28" height="28">
+            <use
+              class="close-btn-icon"
+              href="./images/icons.svg#icon-form-close-btn"
+            ></use>
+          </svg>
+        </button>
+        <p class="form-title">
+          leave a review about
+          <span class="form-title-span">our chocolate</span>
+        </p>
+        <form>
+          <div class="form-field">
+            <label for="user-name" class="form-input-label">Name</label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="input"
+              />
+              <svg class="form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-input-name"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="email" class="form-input-label">Email</label>
+            <div class="input-wrapper">
+              <input type="email" id="email" name="email" class="input" />
+              <svg class="form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-input-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="phone" class="form-input-label">Phone</label>
+            <div class="input-wrapper">
+              <input type="tel" id="phone" name="phone" class="input" />
+              <svg class="form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-input-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field textarea-wrapper">
+            <label for="user-comment" class="form-input-label">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="textarea input"
+            ></textarea>
+          </div>
+          <div class="form-field accept-wrapper">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+              class="input-accept visually-hidden"
+            />
+            <label for="user-privacy" class="accept-label">
+              <span class="checkbox-span-icon">
+                <svg class="checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-rules-accept"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="user-privacy-link" href="">Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" class="form-btn-send">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
