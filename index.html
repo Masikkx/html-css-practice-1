@@ -20,14 +20,14 @@
     <title>Simply Chocolate</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" id="home">
       <div class="container">
         <nav class="page-nav">
           <a href="./index.html" class="logo">
             <div class="logo-text">
               simply <span class="logo-span">chocolate</span>
             </div>
-            <svg class="logo-icon" width="24" height="24">
+            <svg class="logo-icon" width="21" height="21">
               <use href="./images/icons.svg#icon-chocolate"></use>
             </svg>
           </a>
@@ -63,10 +63,15 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-btn-open">
+          <svg class="menu-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-menu-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
-    <section id="Hero" class="hero-section">
+    <section class="hero-section">
       <div class="container">
         <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
@@ -152,7 +157,7 @@
       </div>
     </section>
 
-    <section class="ingredients">
+    <section class="ingredients" id="products">
       <div class="container">
         <h2 class="ingredients-section-title">
           it all adds up to one exceptional <span>taste</span> sensation
@@ -168,10 +173,14 @@
             <div class="box">
               <div class="box-wrapper">
                 <img
+                  srcset="
+                    ./images/milk-chocolate.webp   1x,
+                    ./images/milk-chocolate-2x.png 2x
+                  "
                   src="./images/milk-chocolate.webp"
                   alt="milk chocolate"
-                  width="206"
-                  height="160"
+                  width="224"
+                  height="171"
                   class="ingredients-list-item-img"
                 />
                 <h3 class="ingredients-list-item-title">milk chocolate</h3>
@@ -200,10 +209,11 @@
             <div class="box">
               <div class="box-wrapper">
                 <img
+                  srcset="./images/milk.webp 1x, ./images/milk-2x.png 2x"
                   src="./images/milk.webp"
                   alt="milk"
-                  width="206"
-                  height="160"
+                  width="224"
+                  height="171"
                   class="ingredients-list-item-img"
                 />
                 <h3 class="ingredients-list-item-title">milk</h3>
@@ -233,10 +243,14 @@
             <div class="box">
               <div class="box-wrapper">
                 <img
+                  srcset="
+                    ./images/semi-sweet-chocolate.webp   1x,
+                    ./images/semi-sweet-chocolate-2x.png 2x
+                  "
                   src="./images/semi-sweet-chocolate.webp"
                   alt="semi - sweet choocolate"
-                  width="206"
-                  height="160"
+                  width="224"
+                  height="171"
                   class="ingredients-list-item-img"
                 />
                 <h3 class="ingredients-list-item-title">
@@ -268,10 +282,11 @@
             <div class="box">
               <div class="box-wrapper">
                 <img
+                  srcset="./images/nuts.webp 1x, ./images/nuts-2x.png 2x"
                   src="./images/nuts.webp"
                   alt="nuts"
-                  width="206"
-                  height="160"
+                  width="224"
+                  height="171"
                   class="ingredients-list-item-img"
                 />
                 <h3 class="ingredients-list-item-title">nuts</h3>
@@ -307,12 +322,8 @@
           how it’s <span class="instruction-title-span">made?</span>
         </h2>
         <div class="instruction-wrapper">
-          <img
-            src="./images/recipe.jpg"
-            alt="recipe"
-            width="600"
-            height="400"
-          />
+          <div class="instruction-photo-wrapper"></div>
+
           <div class="instruction-content">
             <h3 class="instruction-description">
               Try our chocolates today and discover the perfect balance of
@@ -352,10 +363,11 @@
         <ul class="feedback-list">
           <li class="feedback-list-item">
             <img
+              srcset="./images/victoria.jpg 1x, ./images/victoria-2x.jpg 2x"
               src="./images/victoria.jpg"
               alt="victoria's photo"
-              width="60"
-              height="60"
+              width="80"
+              height="80"
             />
             <h3 class="feedback-list-title">Victoria Dobrzhanska</h3>
             <p class="feedback-list-text">
@@ -365,10 +377,11 @@
           </li>
           <li class="feedback-list-item">
             <img
+              srcset="./images/nazar.jpg 1x, ./images/nazar-2x.jpg 2x"
               src="./images/nazar.jpg"
               alt="nazar's photo"
-              width="60"
-              height="60"
+              width="80"
+              height="80"
             />
             <h3 class="feedback-list-title">Nazar Babenko</h3>
             <p class="feedback-list-text">
@@ -379,10 +392,11 @@
           </li>
           <li class="feedback-list-item">
             <img
+              srcset="./images/olena.jpg 1x, ./images/olena-2x.jpg 2x"
               src="./images/olena.jpg"
               alt="olena's photo"
-              width="60"
-              height="60"
+              width="80"
+              height="80"
             />
             <h3 class="feedback-list-title">Olena Kampusch</h3>
             <p class="feedback-list-text">
@@ -427,11 +441,19 @@
           <nav class="page-nav">
             <ul class="page-nav-list">
               <li class="page-nav-list-item">
-                <a href="#Home" class="nav-list-item-link">Home</a>
+                <a href="#home" class="nav-list-item-link">Home</a>
               </li>
               <li class="page-nav-list-item">
                 <a href="#how-it’s-made" class="nav-list-item-link"
                   >How it’s made?</a
+                >
+              </li>
+              <li class="page-nav-list-item">
+                <a href="#products" class="nav-list-item-link">Our products</a>
+              </li>
+              <li class="page-nav-list-item">
+                <a href="#chocolate-is-loved" class="nav-list-item-link"
+                  >Top sellers</a
                 >
               </li>
               <li class="page-nav-list-item">
@@ -533,6 +555,49 @@
           </div>
           <button type="submit" class="form-btn-send">Send</button>
         </form>
+      </div>
+    </div>
+    <div class="menu is-open">
+      <div class="menu-wrapper">
+        <button type="button" class="form-close-btn">
+          <svg class="close-btn-icon" width="28" height="28">
+            <use
+              class="close-btn-icon"
+              href="./images/icons.svg#icon-form-close-btn"
+            ></use>
+          </svg>
+        </button>
+        <ul class="page-nav-list">
+          <li class="page-nav-list-item">
+            <a href="#Hero" class="nav-list-item-link">Home</a>
+          </li>
+          <li class="page-nav-list-item">
+            <a href="#how-it’s-made" class="nav-list-item-link"
+              >How it’s made?</a
+            >
+          </li>
+          <li class="page-nav-list-item">
+            <a href="#chocolate-is-loved" class="nav-list-item-link"
+              >Chocolate is loved</a
+            >
+          </li>
+        </ul>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="22" height="22">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="22" height="22">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
