@@ -479,7 +479,7 @@
         </div>
       </div>
     </footer>
-    <div class="layout">
+    <div class="layout is-open">
       <div class="pop-up-form">
         <button type="button" class="form-close-btn">
           <svg class="close-btn-icon" width="28" height="28">
@@ -490,7 +490,7 @@
           </svg>
         </button>
         <p class="form-title">
-          leave a review about
+          leave a review <br />about
           <span class="form-title-span">our chocolate</span>
         </p>
         <form>
@@ -533,6 +533,7 @@
               name="user-comment"
               id="user-comment"
               class="textarea input"
+              placeholder="Enter text"
             ></textarea>
           </div>
           <div class="form-field accept-wrapper">
@@ -549,8 +550,10 @@
                   <use href="./images/icons.svg#icon-rules-accept"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="user-privacy-link" href="">Privacy Policy</a></label
+              <div class="accept-text">
+                I accept the terms and conditions of the
+                <a class="user-privacy-link" href="">Privacy Policy</a>
+              </div></label
             >
           </div>
           <button type="submit" class="form-btn-send">Send</button>
