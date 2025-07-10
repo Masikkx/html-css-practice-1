@@ -968,12 +968,15 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 136px 16px 20px 16px;
+  padding: 20px 16px 20px 16px;
   margin: 0 auto;
   background-color: #1e1823;
   border-radius: 15px;
   width: 375px;
   min-height: 794px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .menu .page-nav-list {
   display: block;
@@ -981,11 +984,9 @@ a {
 .menu .social-list {
   display: block;
 }
-
-.menu .form-close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.menu-close-btn {
+  margin-left: auto;
+  margin-bottom: 88px;
   width: 28px;
   height: 28px;
   padding: 0;
@@ -996,6 +997,7 @@ a {
   background-color: transparent;
 }
 .menu .page-nav-list {
+  margin-bottom: auto;
 }
 .menu .close-btn-icon {
   stroke: #fff;
@@ -1010,10 +1012,15 @@ a {
 .menu .page-nav-list-item:not(:last-child) {
   margin-bottom: 24px;
 }
-.menu .social-list {
+.menu-social-list {
+  height: 100%;
   display: flex;
+  align-content: center;
   gap: 18px;
-  margin-top: 466px;
+  justify-self: center;
+}
+.menu-social-list .social-list-item {
+  margin-top: auto;
 }
 .social-icon {
   stroke: #ffffff;
